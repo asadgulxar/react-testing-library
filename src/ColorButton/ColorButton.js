@@ -25,3 +25,7 @@ function ColorButton() {
 }
 
 export default ColorButton;
+
+export function replaceCamelWithSpaces(colorName) {
+  return colorName.replace(/\B([A-Z])\B/g, " $1");
+}
